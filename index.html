@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Автоматизированный комплекс сборки БПЛА — В-Тех</title>
+<meta name="description" content="АКС БПЛА — высокотехнологичная закрытая роботизированная ячейка для серийного производства квадрокоптеров. Разработка, поставка и инженерная адаптация изделий под роботизированную сборку."/>
+<meta name="theme-color" content="#f4faff"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+<link rel="preload" as="image" href="assets/putp.svg"/>
+<link rel="preload" as="image" href="assets/fasie.svg"/>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="theme.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="В-Тех">
+      <img src="assets/logo.svg" alt="Логотип ООО «В-Тех»"/>
+      <span>В-Тех<small>АКС БПЛА</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">О компании</a>
+      <a href="#scheme">Комплекс</a>
+      <a href="#benefits">Преимущества</a>
+      <a href="#offer">Условия</a>
+      <a href="#demo">Обсудить проект</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#demo" data-toast="Напишите нам на vlad1mirova17@yandex.ru — отправим опросный лист на разработку комплекса.">Запросить предложение</a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-controls="navLinks" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container">
+      <div class="support-strip" aria-label="Информация о поддержке проекта">
+        <div class="support-logos">
+          <div class="support-logo-card support-logo-card--putp">
+            <img src="assets/putp.svg" alt="Платформа университетского технологического предпринимательства"/>
+          </div>
+          <div class="support-logo-card">
+            <img src="assets/fasie.svg" alt="Фонд содействия инновациям"/>
+          </div>
+        </div>
+        <p class="support-text">Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап» мероприятия «Платформа университетского технологического предпринимательства» федерального проекта «Технологии».</p>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Автоматизация производства БПЛА</span>
+          <h1>Автоматизированный комплекс сборки БПЛА (АКС БПЛА)</h1>
+          <p class="lead">Высокотехнологичная закрытая роботизированная ячейка для серийного производства квадрокоптеров. Полная автоматизация сборочного процесса на базе манипулятора и встроенной системы технического зрения исключает ручной труд и повышает надежность готовых изделий.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#demo" data-toast="Напишите нам на vlad1mirova17@yandex.ru — отправим опросный лист на разработку комплекса.">Запросить предложение</a>
+            <a class="btn btn-secondary" href="#benefits">Посмотреть преимущества</a>
+          </div>
+          <div class="hero-points">
+            <span>6-осевой манипулятор DOBOT</span>
+            <span>100% контроль качества</span>
+            <span>Габариты 1300×1800×2000 мм</span>
+          </div>
+        </div>
+
+        <div class="app-scene" aria-label="Макет панели контроля роботизированной ячейки">
+          <div class="floating-card fc-one">
+            <b>1300×1800×2000</b>
+            <small>мм — габариты ячейки</small>
+          </div>
+          <div class="floating-card fc-two">
+            <b>6</b>
+            <small>осей манипулятора</small>
+          </div>
+          <div class="app-window">
+            <div class="app-topbar">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <div class="app-user"></div>
+            </div>
+            <div class="app-body">
+              <aside class="app-side">
+                <div class="side-logo"></div>
+                <div class="side-item active"></div>
+                <div class="side-item"></div>
+                <div class="side-item"></div>
+                <div class="side-item"></div>
+                <div class="side-item"></div>
+                <div class="side-item"></div>
+                <div class="side-item"></div>
+              </aside>
+              <div class="app-main">
+                <div class="app-heading">
+                  <div>
+                    <div class="panel-title">АКС БПЛА</div>
+                    <div class="panel-subtitle">Роботизированная ячейка · зона сборки</div>
+                  </div>
+                  <div class="status-pill">Комплекс активен</div>
+                </div>
+                <div class="metric-grid">
+                  <div class="metric">
+                    <div class="metric-icon"></div>
+                    <b>100%</b>
+                    <small>контроль качества</small>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-icon"></div>
+                    <b>0</b>
+                    <small>ручных операций</small>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-icon"></div>
+                    <b>24/7</b>
+                    <small>режим сборки</small>
+                  </div>
+                </div>
+                <div class="app-lower">
+                  <div class="chart-card">
+                    <div class="panel-caption">Камера · техническое зрение</div>
+                    <img class="cell-view" src="assets/vision-view.svg" alt="Кадр системы технического зрения: квадрокоптер в зоне сборки, положение узлов отслеживается"/>
+                  </div>
+                  <div class="tasks-card">
+                    <div class="panel-caption">Журнал цикла</div>
+                    <div class="task-row"><div class="task-check"></div><div class="task-text">Захват дрона</div></div>
+                    <div class="task-row"><div class="task-check"></div><div class="task-text">Установка модуля</div></div>
+                    <div class="task-row"><div class="task-check"></div><div class="task-text">Контроль зрением</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <span class="eyebrow">О компании</span>
+      <h2>Инженерные решения для автоматизации сборки летательных аппаратов</h2>
+      <p class="section-intro">Компания ООО «В-Тех» специализируется на инженерно-техническом проектировании и создании передовых решений в сфере автоматизации производства летательных аппаратов. Мы разрабатываем технологические ячейки «под ключ» — от адаптации геометрии изделий под требования роботизированного монтажа до полной интеграции интеллектуальных систем контроля качества.</p>
+      <div class="about-grid">
+        <article class="info-card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 19V9m6 10V5m6 14v-7m4 7H2"></path>
+              <path d="M4 8l6-4 6 7 4-3"></path>
+            </svg>
+          </div>
+          <h3>Инженерное проектирование</h3>
+          <p>Проектируем роботизированные технологические ячейки под конкретную геометрию и технологию сборки изделия.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="6" cy="6" r="2"></circle>
+              <circle cx="18" cy="6" r="2"></circle>
+              <circle cx="12" cy="18" r="2"></circle>
+              <path d="M8 6h8M7.5 7.5l3.2 8.3m5.8-8.3l-3.2 8.3"></path>
+            </svg>
+          </div>
+          <h3>Комплекс «под ключ»</h3>
+          <p>Адаптируем геометрию изделия под требования роботизированного монтажа и сопровождаем запуск ячейки в производство.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7l8-4z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3>Интеллектуальный контроль</h3>
+          <p>Интегрируем системы технического зрения и базы данных параметров сборки для контроля качества каждой единицы продукции.</p>
+        </article>
+      </div>
+      <div class="flow-strip">
+        <div class="flow-row">
+          <div class="flow-node">Проект</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">Адаптация изделия</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">Сборка АКС</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-node">Контроль качества</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="scheme">
+    <div class="container">
+      <span class="eyebrow">Состав комплекса</span>
+      <h2>Техническая схема автоматизированной ячейки</h2>
+      <p class="section-intro">Закрытая ячейка 1300×1800×2000 мм: шестиосевой манипулятор DOBOT со сменными захватами, магазины заготовок и система технического зрения, отслеживающая каждый этап сборки.</p>
+      <figure class="scheme-figure">
+        <img src="assets/cell-blueprint.svg" alt="Техническая схема АКС БПЛА: вид спереди и вид сбоку, габариты 1300×1800×2000 мм, манипулятор DOBOT, магазины заготовок, система технического зрения"/>
+      </figure>
+      <div class="scheme-specs">
+        <div class="spec">
+          <span class="spec-key">Габариты комплекса</span>
+          <span class="spec-val">1300×1800×2000 мм</span>
+        </div>
+        <div class="spec">
+          <span class="spec-key">Манипулятор</span>
+          <span class="spec-val">DOBOT, 6 осей</span>
+        </div>
+        <div class="spec">
+          <span class="spec-key">Сменные инструменты</span>
+          <span class="spec-val">вакуумный и специализированный захваты</span>
+        </div>
+        <div class="spec">
+          <span class="spec-key">Контроль качества</span>
+          <span class="spec-val">техническое зрение, 100% этапов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <span class="eyebrow">Преимущества</span>
+      <h2>Ключевые преимущества автоматизированного комплекса</h2>
+      <p class="section-intro">Закрытая роботизированная ячейка объединяет адаптированную конструкцию изделия, многофункциональную робототехнику и стопроцентный контроль качества сборки.</p>
+      <div class="benefits-layout">
+        <div class="benefit-feature">
+          <h3>Полная автоматизация сборочного процесса</h3>
+          <p>Манипулятор, сменные захваты и система технического зрения работают как единый комплекс: ручной труд в сборочном цикле исключен.</p>
+          <figure class="benefit-visual">
+            <img src="assets/benefits-cell.svg" alt="Роботизированная ячейка АКС БПЛА в изометрии: манипулятор DOBOT, магазины оснастки, система технического зрения и квадрокоптер на столе сборки"/>
+          </figure>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <span class="benefit-mark">0</span>
+            <h3>Адаптированная конструкция изделия</h3>
+            <p>Использование безрезьбовых соединений для максимального сокращения технологических переходов.</p>
+          </article>
+          <article class="benefit-card">
+            <span class="benefit-mark">6</span>
+            <h3>Многофункциональная робототехника</h3>
+            <p>Шестиосевой коллаборативный манипулятор DOBOT со сменными инструментами (вакуумный захват и специализированный захват).</p>
+          </article>
+          <article class="benefit-card">
+            <span class="benefit-mark">100%</span>
+            <h3>100% контроль качества</h3>
+            <p>Компьютерное зрение в режиме реального времени отслеживает каждый этап сборки и сохраняет параметры в базе данных.</p>
+          </article>
+          <article class="benefit-card featured">
+            <span class="benefit-mark">1300</span>
+            <h3>Компактность и автономность</h3>
+            <p>Габариты комплекса всего 1300×1800×2000 мм при вместительных магазинах для бесперебойной сборки партий дронов.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offer">
+    <div class="container">
+      <div class="offer-wrap">
+        <div class="offer-grid">
+          <div>
+            <span class="eyebrow">Специальное предложение</span>
+            <div class="discount">
+              <b>В подарок</b>
+            </div>
+            <p>Индивидуальный аудит технологичности вашего БПЛА: при заказе разработки и поставки автоматизированного комплекса сборки проведем бесплатную инженерную адаптацию 3D-модели вашего дрона под требования роботизированного монтажа.</p>
+            <a class="btn btn-primary" href="#demo" style="margin-top:12px" data-toast="Напишите нам на vlad1mirova17@yandex.ru — отправим опросный лист для аудита технологичности.">Получить предложение</a>
+          </div>
+          <div class="offer-list">
+            <div class="offer-item">Анализ 3D-модели дрона</div>
+            <div class="offer-item">Инженерная адаптация</div>
+            <div class="offer-item">Требования к монтажу</div>
+            <div class="offer-item">Безрезьбовые соединения</div>
+            <div class="offer-item">Расчет цикла сборки</div>
+            <div class="offer-item">Рекомендации инженеров</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta" id="demo">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-copy">
+          <span class="eyebrow">Обсуждение проекта</span>
+          <h2>Рассчитаем автоматизированный комплекс сборки под ваши БПЛА</h2>
+          <p>Оставьте заявку на разработку и поставку АКС БПЛА или получите консультацию по инженерной адаптации вашей модели дрона под роботизированную сборку.</p>
+          <p class="cta-mail">Связаться с нами: <a href="mailto:vlad1mirova17@yandex.ru">vlad1mirova17@yandex.ru</a></p>
+          <ul class="cta-contacts">
+            <li>ООО «В-Тех» — проектирование и автоматизация сборки летательных аппаратов</li>
+            <li>АКС БПЛА — закрытая ячейка 1300×1800×2000 мм, манипулятор DOBOT, техническое зрение</li>
+          </ul>
+          <div class="cta-visual">
+            <img src="assets/drone-final.svg" alt="Собранный квадрокоптер: все узлы проверены системой технического зрения"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="funding-footer">
+      <div class="funding-logos">
+        <div class="funding-logo funding-logo--putp">
+          <img src="assets/putp.svg" alt="Платформа университетского технологического предпринимательства"/>
+        </div>
+        <div class="funding-logo">
+          <img src="assets/fasie.svg" alt="Фонд содействия инновациям"/>
+        </div>
+      </div>
+      <p class="funding-text">Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап» мероприятия «Платформа университетского технологического предпринимательства» федерального проекта «Технологии».</p>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="В-Тех"/>
+        ООО «В-Тех»
+      </div>
+      <div>© 2026 Автоматизированный комплекс сборки БПЛА</div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
+

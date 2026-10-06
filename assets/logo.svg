@@ -1,0 +1,29 @@
+<svg width="229" height="229" viewBox="0 0 229 229" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="В-Тех">
+  <defs>
+    <linearGradient id="vtechGradient" x1="0" y1="0" x2="229" y2="229" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123243"/>
+      <stop offset="1" stop-color="#1E6E70"/>
+    </linearGradient>
+    <linearGradient id="vtechEdge" x1="0" y1="0" x2="229" y2="229" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4CC7FF"/>
+      <stop offset="1" stop-color="#2FE3C4"/>
+    </linearGradient>
+  </defs>
+  <rect width="229" height="229" rx="40" fill="url(#vtechGradient)"/>
+  <rect x="4" y="4" width="221" height="221" rx="36" stroke="url(#vtechEdge)" stroke-opacity="0.55" stroke-width="2"/>
+  <g stroke="#2FE3C4" stroke-width="7" stroke-linecap="round" stroke-opacity="0.9">
+    <path d="M98 94L64 76"/>
+    <path d="M131 94L165 76"/>
+    <path d="M98 135L64 153"/>
+    <path d="M131 135L165 153"/>
+  </g>
+  <g stroke="#EAF6F9" stroke-width="6" fill="none">
+    <circle cx="58" cy="72" r="17"/>
+    <circle cx="171" cy="72" r="17"/>
+    <circle cx="58" cy="157" r="17"/>
+    <circle cx="171" cy="157" r="17"/>
+  </g>
+  <rect x="87" y="85" width="55" height="59" rx="14" fill="#EAF6F9"/>
+  <rect x="101" y="103" width="27" height="7" rx="3.5" fill="#123243"/>
+  <rect x="101" y="117" width="17" height="7" rx="3.5" fill="#2EA984"/>
+</svg>

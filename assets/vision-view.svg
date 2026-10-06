@@ -1,0 +1,62 @@
+<svg width="300" height="190" viewBox="0 0 300 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кадр системы технического зрения: квадрокоптер в зоне контроля, положение узлов отслеживается">
+  <defs>
+    <pattern id="vvGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#2fe3c4" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="298" height="188" rx="8" fill="#081218" stroke="#1f4453" stroke-width="1.5"/>
+  <rect x="1" y="1" width="298" height="188" rx="8" fill="url(#vvGrid)"/>
+
+  <!-- заголовок кадра -->
+  <circle cx="14" cy="17" r="3" fill="#2fe3c4"/>
+  <text x="23" y="21" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9" fill="#7f9aab">ТЕХНИЧЕСКОЕ ЗРЕНИЕ</text>
+  <path d="M12 34H288" stroke="#1f4453" stroke-width="1.5"/>
+
+  <!-- квадрокоптер (вид сверху) -->
+  <g stroke="#cfe9ef" stroke-opacity="0.5" stroke-width="1.5" fill="none">
+    <circle cx="104" cy="66" r="17"/>
+    <circle cx="196" cy="66" r="17"/>
+    <circle cx="104" cy="134" r="17"/>
+    <circle cx="196" cy="134" r="17"/>
+  </g>
+  <g stroke="#9fc6d2" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round">
+    <path d="M104 66H120M104 66L96 80M104 66L96 52"/>
+    <path d="M196 66H212M196 66L188 80M196 66L188 52"/>
+    <path d="M104 134H120M104 134L96 148M104 134L96 120"/>
+    <path d="M196 134H212M196 134L188 148M196 134L188 120"/>
+  </g>
+  <g stroke="#cfe9ef" stroke-width="4" stroke-linecap="round">
+    <path d="M134 86L106 68"/>
+    <path d="M166 86L194 68"/>
+    <path d="M134 114L106 132"/>
+    <path d="M166 114L194 132"/>
+  </g>
+  <rect x="128" y="78" width="44" height="44" rx="8" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.6" stroke-width="1.5"/>
+  <rect x="136" y="86" width="28" height="28" rx="5" fill="#08141c" stroke="#4cc7ff" stroke-opacity="0.5" stroke-width="1.5"/>
+  <circle cx="150" cy="100" r="5.5" fill="#08141c" stroke="#2fe3c4" stroke-width="1.5"/>
+  <circle cx="150" cy="100" r="2" fill="#2fe3c4" fill-opacity="0.85"/>
+
+  <!-- контур обнаружения -->
+  <rect x="78" y="40" width="144" height="120" rx="2" fill="none" stroke="#2fe3c4" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <g stroke="#2fe3c4" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M78 60V40H98"/>
+    <path d="M202 40H222V60"/>
+    <path d="M78 140V160H98"/>
+    <path d="M222 160H202V140"/>
+  </g>
+  <g stroke="#2fe3c4" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round">
+    <path d="M150 44V74M150 126V156M82 100H124M176 100H218"/>
+  </g>
+  <g fill="#2fe3c4">
+    <circle cx="104" cy="66" r="3.5"/>
+    <circle cx="196" cy="66" r="3.5"/>
+    <circle cx="104" cy="134" r="3.5"/>
+    <circle cx="196" cy="134" r="3.5"/>
+  </g>
+
+  <!-- нижняя строка состояния -->
+  <path d="M12 168H288" stroke="#1f4453" stroke-width="1.5"/>
+  <text x="12" y="182" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9" fill="#7f9aab">КОНТРОЛЬ ЭТАПА</text>
+  <text x="288" y="182" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9" fill="#7f9aab" text-anchor="end">ПАРАМЕТРЫ → В БАЗУ</text>
+</svg>

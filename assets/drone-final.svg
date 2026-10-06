@@ -1,0 +1,69 @@
+<svg width="520" height="230" viewBox="0 0 520 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Собранный квадрокоптер: все узлы проверены системой технического зрения">
+  <defs>
+    <pattern id="dfGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#2fe3c4" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="dfGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2fe3c4" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#2fe3c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="520" height="230" fill="url(#dfGrid)"/>
+  <circle cx="260" cy="115" r="150" fill="url(#dfGlow)"/>
+
+  <!-- габаритная окружность -->
+  <circle cx="260" cy="112" r="100" fill="none" stroke="#2fe3c4" stroke-opacity="0.16" stroke-width="1.5" stroke-dasharray="6 8"/>
+
+  <!-- роторы -->
+  <g stroke="#cfe9ef" stroke-opacity="0.45" stroke-width="2" fill="none">
+    <circle cx="175" cy="58" r="26"/>
+    <circle cx="345" cy="58" r="26"/>
+    <circle cx="175" cy="166" r="26"/>
+    <circle cx="345" cy="166" r="26"/>
+  </g>
+  <g stroke="#9fc6d2" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round">
+    <path d="M175 58H199M175 58L163 79M175 58L163 37"/>
+    <path d="M345 58H369M345 58L333 79M345 58L333 37"/>
+    <path d="M175 166H199M175 166L163 187M175 166L163 145"/>
+    <path d="M345 166H369M345 166L333 187M345 166L333 145"/>
+  </g>
+
+  <!-- лучи рамы -->
+  <g stroke="#cfe9ef" stroke-width="7" stroke-linecap="round">
+    <path d="M241 95L180 62"/>
+    <path d="M279 95L340 62"/>
+    <path d="M241 129L180 162"/>
+    <path d="M279 129L340 162"/>
+  </g>
+
+  <!-- корпус и подвес камеры -->
+  <rect x="233" y="85" width="54" height="54" rx="10" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.55" stroke-width="2"/>
+  <rect x="245" y="97" width="30" height="30" rx="6" fill="#08141c" stroke="#4cc7ff" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="260" cy="112" r="7" fill="#08141c" stroke="#2fe3c4" stroke-width="1.5"/>
+  <circle cx="260" cy="112" r="3" fill="#2fe3c4" fill-opacity="0.85"/>
+
+  <!-- отметки контроля узлов -->
+  <g>
+    <circle cx="175" cy="58" r="10" fill="#0b1620" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="345" cy="58" r="10" fill="#0b1620" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="175" cy="166" r="10" fill="#0b1620" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="345" cy="166" r="10" fill="#0b1620" stroke="#2fe3c4" stroke-width="1.5"/>
+  </g>
+  <g stroke="#2fe3c4" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M171 58l3 4 6-8"/>
+    <path d="M341 58l3 4 6-8"/>
+    <path d="M171 166l3 4 6-8"/>
+    <path d="M341 166l3 4 6-8"/>
+  </g>
+
+  <!-- подписи -->
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11">
+    <circle cx="18" cy="20" r="3.5" fill="#2fe3c4"/>
+    <text x="28" y="24" fill="#cfe9ef">КОНТРОЛЬ 100% ЭТАПОВ</text>
+    <text x="492" y="24" fill="#7f9aab" text-anchor="end">МАНИПУЛЯТОР DOBOT · 6 ОСЕЙ</text>
+    <circle cx="18" cy="202" r="3.5" fill="#2fe3c4"/>
+    <text x="28" y="206" fill="#cfe9ef">АВТОМАТИЧЕСКАЯ СБОРКА</text>
+    <text x="492" y="206" fill="#7f9aab" text-anchor="end">БЕЗ РУЧНОГО ТРУДА</text>
+  </g>
+</svg>

@@ -1,0 +1,202 @@
+<svg width="1080" height="720" viewBox="0 0 1080 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Техническая схема комплекса АКС БПЛА: вид спереди и вид сбоку, габариты 1300x1800x2000 мм, манипулятор DOBOT, магазины заготовок, система технического зрения">
+  <defs>
+    <pattern id="bpGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#2fe3c4" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <pattern id="bpGridBig" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#2fe3c4" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="bpGlow" cx="0.5" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#2fe3c4" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2fe3c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- фон чертежа -->
+  <rect width="1080" height="720" fill="#08121a"/>
+  <rect width="1080" height="720" fill="url(#bpGridBig)"/>
+  <rect width="1080" height="720" fill="url(#bpGrid)"/>
+  <rect width="1080" height="720" fill="url(#bpGlow)"/>
+
+  <!-- угловые метки -->
+  <g stroke="#4cc7ff" stroke-opacity="0.5" stroke-width="2">
+    <path d="M24 48V24H48"/>
+    <path d="M1032 24H1056V48"/>
+    <path d="M48 696H24V672"/>
+    <path d="M1032 696H1056V672"/>
+  </g>
+
+  <!-- ================= ВИД СПЕРЕДИ ================= -->
+  <g id="bpFront">
+    <rect x="150" y="90" width="286" height="440" rx="10" fill="#0b1a22" stroke="#2fe3c4" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="176" y="120" width="234" height="300" rx="6" fill="#08141c" stroke="#1f4453" stroke-width="1.5"/>
+    <circle cx="418" cy="106" r="4.5" fill="#2fe3c4"/>
+    <circle cx="402" cy="106" r="4.5" fill="#1f4453"/>
+
+    <!-- магазин заготовок -->
+    <rect x="186" y="150" width="30" height="96" rx="3" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="191" y="158" width="20" height="10" rx="2" fill="#16303b"/>
+    <rect x="191" y="176" width="20" height="10" rx="2" fill="#16303b"/>
+    <rect x="191" y="194" width="20" height="10" rx="2" fill="#16303b"/>
+    <rect x="191" y="212" width="20" height="10" rx="2" fill="#16303b"/>
+
+    <!-- магазин сменных инструментов -->
+    <rect x="366" y="150" width="34" height="120" rx="3" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="372" y="160" width="22" height="14" rx="2" fill="#16303b"/>
+    <rect x="372" y="182" width="22" height="14" rx="2" fill="#16303b"/>
+    <rect x="372" y="204" width="22" height="14" rx="2" fill="#16303b"/>
+    <rect x="372" y="226" width="22" height="14" rx="2" fill="#16303b"/>
+
+    <!-- система технического зрения -->
+    <rect x="282" y="132" width="28" height="16" rx="3" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.7" stroke-width="1.5"/>
+    <circle cx="296" cy="152" r="4.5" fill="#08141c" stroke="#2fe3c4" stroke-width="1.5"/>
+    <path d="M288 156L252 372H340L304 156Z" fill="#2fe3c4" fill-opacity="0.07" stroke="#2fe3c4" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+    <!-- стол сборки -->
+    <rect x="186" y="380" width="214" height="10" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="200" y="390" width="8" height="30" fill="#16303b"/>
+    <rect x="378" y="390" width="8" height="30" fill="#16303b"/>
+
+    <!-- манипулятор DOBOT -->
+    <rect x="198" y="332" width="34" height="48" rx="3" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M215 332L243 262L281 296L292 344" fill="none" stroke="#cfe9ef" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="215" cy="332" r="6" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="243" cy="262" r="6" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="281" cy="296" r="5" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <path d="M286 342L292 352L298 342" fill="none" stroke="#2fe3c4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- квадрокоптер на столе (вид спереди) -->
+    <rect x="272" y="350" width="48" height="24" rx="5" fill="#e9f3f8"/>
+    <path d="M272 362H236" stroke="#cfe9ef" stroke-width="4" stroke-linecap="round"/>
+    <path d="M320 362H356" stroke="#cfe9ef" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="232" cy="356" rx="18" ry="4.5" fill="#9fc6d2" fill-opacity="0.5"/>
+    <ellipse cx="360" cy="356" rx="18" ry="4.5" fill="#9fc6d2" fill-opacity="0.5"/>
+    <path d="M282 374V384M310 374V384M276 384H316" stroke="#cfe9ef" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- панель управления -->
+    <rect x="186" y="436" width="214" height="62" rx="6" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <circle cx="208" cy="466" r="6" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.6" stroke-width="1.5"/>
+    <circle cx="230" cy="466" r="6" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="252" y="448" width="128" height="38" rx="4" fill="#08141c" stroke="#2fe3c4" stroke-opacity="0.3" stroke-width="1.5"/>
+    <rect x="260" y="457" width="52" height="6" rx="3" fill="#2fe3c4" fill-opacity="0.75"/>
+    <rect x="260" y="469" width="86" height="6" rx="3" fill="#1f4453"/>
+    <rect x="260" y="479" width="40" height="4" rx="2" fill="#1f4453"/>
+    <g stroke="#1f4453" stroke-width="2" stroke-linecap="round">
+      <path d="M164 450V488M170 450V488M176 450V488"/>
+      <path d="M410 450V488M416 450V488M422 450V488"/>
+    </g>
+
+    <!-- опоры -->
+    <rect x="170" y="530" width="42" height="12" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="376" y="530" width="42" height="12" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+  </g>
+  <!-- ================= ВИД СБОКУ ================= -->
+  <g id="bpSide">
+    <rect x="620" y="90" width="396" height="440" rx="10" fill="#0b1a22" stroke="#2fe3c4" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="640" y="120" width="356" height="300" rx="6" fill="#08141c" stroke="#1f4453" stroke-width="1.5"/>
+
+    <!-- магазины вдоль дальней стенки -->
+    <rect x="930" y="150" width="44" height="110" rx="3" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="938" y="158" width="28" height="12" rx="2" fill="#16303b"/>
+    <rect x="938" y="180" width="28" height="12" rx="2" fill="#16303b"/>
+    <rect x="938" y="202" width="28" height="12" rx="2" fill="#16303b"/>
+    <rect x="938" y="224" width="28" height="12" rx="2" fill="#16303b"/>
+    <rect x="922" y="278" width="52" height="72" rx="3" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="930" y="286" width="36" height="14" rx="2" fill="#16303b"/>
+    <rect x="930" y="308" width="36" height="14" rx="2" fill="#16303b"/>
+
+    <!-- система технического зрения -->
+    <rect x="776" y="132" width="28" height="16" rx="3" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.7" stroke-width="1.5"/>
+    <circle cx="790" cy="152" r="4.5" fill="#08141c" stroke="#2fe3c4" stroke-width="1.5"/>
+    <path d="M782 156L812 328H878L798 156Z" fill="#2fe3c4" fill-opacity="0.07" stroke="#2fe3c4" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+    <!-- стол сборки -->
+    <rect x="660" y="380" width="336" height="10" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+
+    <!-- манипулятор DOBOT -->
+    <rect x="676" y="332" width="34" height="48" rx="3" fill="#123243" stroke="#2fe3c4" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M693 332L730 258L798 282L846 336" fill="none" stroke="#cfe9ef" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="693" cy="332" r="6" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="730" cy="258" r="6" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <circle cx="798" cy="282" r="5" fill="#0b1a22" stroke="#2fe3c4" stroke-width="1.5"/>
+    <path d="M840 334L846 344L852 334" fill="none" stroke="#2fe3c4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- квадрокоптер (вид сбоку) -->
+    <rect x="820" y="344" width="54" height="22" rx="5" fill="#e9f3f8"/>
+    <ellipse cx="847" cy="330" rx="28" ry="5" fill="#9fc6d2" fill-opacity="0.5"/>
+    <path d="M832 366V378M862 366V378M826 378H868" stroke="#cfe9ef" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- панель управления и дверь -->
+    <g stroke="#1f4453" stroke-width="2" stroke-linecap="round">
+      <path d="M664 450V488M670 450V488M676 450V488"/>
+      <path d="M962 440V520"/>
+    </g>
+    <rect x="700" y="444" width="120" height="46" rx="5" fill="#0e2129" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="712" y="456" width="44" height="6" rx="3" fill="#2fe3c4" fill-opacity="0.75"/>
+    <rect x="712" y="470" width="72" height="6" rx="3" fill="#1f4453"/>
+
+    <!-- опоры -->
+    <rect x="640" y="530" width="42" height="12" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+    <rect x="954" y="530" width="42" height="12" rx="2" fill="#123243" stroke="#1f4453" stroke-width="1.5"/>
+  </g>
+  <!-- ================= РАЗМЕРЫ ================= -->
+  <g stroke="#4cc7ff" stroke-opacity="0.75" stroke-width="1.5">
+    <path d="M150 580H436"/>
+    <path d="M620 580H1016"/>
+    <path d="M470 90V530"/>
+  </g>
+  <g stroke="#4cc7ff" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="4 5">
+    <path d="M150 542V592M436 542V592"/>
+    <path d="M620 542V592M1016 542V592"/>
+    <path d="M436 90H482M436 530H482"/>
+  </g>
+  <g fill="#4cc7ff" fill-opacity="0.85">
+    <polygon points="150,580 162,575 162,585"/>
+    <polygon points="436,580 424,575 424,585"/>
+    <polygon points="620,580 632,575 632,585"/>
+    <polygon points="1016,580 1004,575 1004,585"/>
+    <polygon points="470,90 465,102 475,102"/>
+    <polygon points="470,530 465,518 475,518"/>
+  </g>
+
+  <!-- ================= ПОДПИСИ И ВЫНОСКИ ================= -->
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+    <text x="293" y="572" font-size="12" fill="#cfe9ef" text-anchor="middle">1300</text>
+    <text x="818" y="572" font-size="12" fill="#cfe9ef" text-anchor="middle">1800</text>
+    <text x="462" y="310" font-size="12" fill="#cfe9ef" text-anchor="middle" transform="rotate(-90 462 310)">2000</text>
+    <text x="293" y="624" font-size="11" fill="#7f9aab" text-anchor="middle">ВИД СПЕРЕДИ</text>
+    <text x="818" y="624" font-size="11" fill="#7f9aab" text-anchor="middle">ВИД СБОКУ</text>
+
+    <!-- выноски -->
+    <g font-size="11">
+      <path d="M16 232H96L205 252" fill="none" stroke="#4cc7ff" stroke-opacity="0.6" stroke-width="1.5"/>
+      <circle cx="205" cy="252" r="3" fill="#4cc7ff"/>
+      <text x="16" y="206" fill="#cfe9ef">6-осевой</text>
+      <text x="16" y="220" fill="#7f9aab">манипулятор DOBOT</text>
+
+      <path d="M16 142H92L282 150" fill="none" stroke="#4cc7ff" stroke-opacity="0.6" stroke-width="1.5"/>
+      <circle cx="282" cy="150" r="3" fill="#4cc7ff"/>
+      <text x="16" y="116" fill="#cfe9ef">Техническое зрение</text>
+      <text x="16" y="130" fill="#7f9aab">контроль 100% этапов</text>
+
+      <path d="M362 140L370 150" fill="none" stroke="#4cc7ff" stroke-opacity="0.6" stroke-width="1.5"/>
+      <circle cx="370" cy="150" r="3" fill="#4cc7ff"/>
+      <text x="312" y="130" fill="#cfe9ef" font-size="10">Магазины</text>
+      <text x="312" y="143" fill="#7f9aab" font-size="10">заготовок</text>
+
+      <path d="M452 550H440V392H398" fill="none" stroke="#4cc7ff" stroke-opacity="0.6" stroke-width="1.5"/>
+      <circle cx="398" cy="392" r="3" fill="#4cc7ff"/>
+      <text x="452" y="556" fill="#7f9aab">Зона сборки</text>
+    </g>
+
+    <!-- штамп чертежа -->
+    <rect x="150" y="655" width="866" height="50" rx="6" fill="#0b1a22" stroke="#1f4453" stroke-width="1.5"/>
+    <path d="M560 655V705" stroke="#1f4453" stroke-width="1.5"/>
+    <text x="168" y="678" font-size="12" fill="#cfe9ef">АКС БПЛА — АВТОМАТИЗИРОВАННЫЙ КОМПЛЕКС СБОРКИ БПЛА</text>
+    <text x="168" y="696" font-size="11" fill="#7f9aab">ООО «В-Тех» · размеры в мм · вид спереди и вид сбоку</text>
+    <text x="998" y="678" font-size="11.5" fill="#cfe9ef" text-anchor="end">ГАБАРИТЫ 1300×1800×2000 мм</text>
+    <text x="998" y="696" font-size="11" fill="#7f9aab" text-anchor="end">МАНИПУЛЯТОР DOBOT, 6 ОСЕЙ · КОНТРОЛЬ ЗРЕНИЕМ</text>
+  </g>
+</svg>
+
+
