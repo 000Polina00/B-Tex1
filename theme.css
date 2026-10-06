@@ -1,0 +1,443 @@
+/* ============================================================
+   ООО «В-Тех» — АКС БПЛА
+   Тема «Инженерный контур» (industrial / mission control)
+
+   styles.css  — базовая сетка, типографика-скелет и адаптив
+   theme.css   — визуальная идентиность: тёмный графит, техно-циан,
+                 моноширинные метки, HUD-панели, сетка-чертёж
+   ============================================================ */
+
+:root{
+  --ink:#e9f3f8;
+  --muted:#83a0b1;
+  --line:#1b303c;
+  --paper:#070d12;
+  --soft:#0a141a;
+  --sky:#0d1c25;
+  --blue:#2b9dff;
+  --blue-2:#4cc7ff;
+  --mint:#2fe3c4;
+  --mint-dark:#12b8a6;
+  --navy:#071018;
+  --panel:#0d1a22;
+  --panel-2:#101f28;
+  --steel:#1f4453;
+  --mono:ui-monospace,SFMono-Regular,"JetBrains Mono",Consolas,"Liberation Mono",monospace;
+  --shadow:0 22px 60px rgba(0,0,0,.55);
+  --radius-xl:14px;
+  --radius-lg:12px;
+  --radius-md:10px;
+}
+
+body{background:var(--paper);color:var(--ink)}
+
+/* Фон: инженерная сетка + холодные засветки */
+body:before{
+  opacity:1;
+  background-image:
+    linear-gradient(rgba(47,227,196,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(47,227,196,.045) 1px,transparent 1px),
+    radial-gradient(circle at 84% 4%,rgba(43,157,255,.16),transparent 44%),
+    radial-gradient(circle at 4% 94%,rgba(47,227,196,.10),transparent 40%);
+  background-size:64px 64px,64px 64px,100% 100%,100% 100%;
+}
+
+::selection{background:var(--mint);color:#04140f}
+
+/* Тёмная схема для системных элементов и скроллбара */
+html{color-scheme:dark}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:#070d12}
+::-webkit-scrollbar-thumb{background:#1e3b46;border:2px solid #070d12;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:var(--mint)}
+
+h1,h2{font-weight:800}
+h1{letter-spacing:-.04em}
+h2{letter-spacing:-.035em;max-width:900px}
+h3{letter-spacing:-.01em}
+
+.section-intro{color:var(--muted)}
+
+/* Разделители секций — тонкая техническая линия */
+section + section{border-top:1px solid rgba(27,48,60,.8)}
+
+/* Метка-«шильдик»: моноширинный код вместо мягкой пилюли */
+.eyebrow{
+  color:var(--mint);
+  background:rgba(47,227,196,.07);
+  border:1px solid rgba(47,227,196,.32);
+  border-radius:6px;
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.13em;
+  padding:9px 13px;
+}
+.eyebrow:before{
+  width:7px;
+  height:7px;
+  border-radius:1px;
+  background:var(--mint);
+  box-shadow:0 0 12px var(--mint);
+}
+
+/* ================= ШАПКА И НАВИГАЦИЯ ================= */
+.site-header{
+  background:rgba(7,13,18,.86);
+  border-bottom:1px solid rgba(47,227,196,.16);
+}
+.nav-wrap{min-height:74px}
+.brand img{box-shadow:0 0 0 1px rgba(47,227,196,.28),0 10px 26px rgba(0,0,0,.5)}
+.brand span small{
+  color:var(--mint);
+  font-family:var(--mono);
+  letter-spacing:.16em;
+  font-size:10px;
+}
+.nav-links{color:#9fbccb;font-size:14px;font-weight:700}
+.nav-links a{padding:6px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.nav-links a:hover{color:var(--mint);border-bottom-color:rgba(47,227,196,.5)}
+.menu-toggle{
+  color:var(--mint);
+  background:rgba(47,227,196,.06);
+  border:1px solid rgba(47,227,196,.3);
+  border-radius:10px;
+}
+
+/* ================= КНОПКИ ================= */
+.btn{
+  border-radius:8px;
+  min-height:50px;
+  font-family:var(--mono);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.btn-primary{
+  color:#03130f;
+  background:linear-gradient(135deg,var(--mint),#12b8a6);
+  box-shadow:0 14px 34px rgba(47,227,196,.26);
+}
+.btn-primary:hover{box-shadow:0 18px 42px rgba(47,227,196,.36)}
+.btn-secondary{
+  color:var(--mint);
+  background:rgba(47,227,196,.05);
+  border:1px solid rgba(47,227,196,.42);
+}
+.btn-secondary:hover{background:rgba(47,227,196,.12)}
+
+/* ================= ПЕРВЫЙ ЭКРАН ================= */
+.hero{
+  background:linear-gradient(180deg,#08131a,#070d12 72%),
+             radial-gradient(circle at 78% 6%,rgba(47,227,196,.16),transparent 42%);
+  padding:64px 0 84px;
+}
+.hero:after{
+  border:1px solid rgba(47,227,196,.18);
+  box-shadow:0 0 0 45px rgba(47,227,196,.03),0 0 0 90px rgba(43,157,255,.03);
+}
+.support-strip{
+  background:rgba(11,22,29,.88);
+  border:1px solid rgba(47,227,196,.22);
+  border-radius:12px;
+  box-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+.support-logos{border-right:1px solid rgba(47,227,196,.16)}
+.support-logo-card{background:#eef6f9;border-radius:8px}
+.support-text{color:#a9c2d1;font-weight:600}
+.hero-copy .lead{color:#a9c2d1;max-width:640px}
+
+.hero-points span{
+  color:#bfe6dd;
+  background:rgba(11,22,29,.85);
+  border:1px solid rgba(47,227,196,.22);
+  border-radius:6px;
+  font-family:var(--mono);
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+.hero-points span:before{
+  color:var(--mint);
+  background:rgba(47,227,196,.14);
+  border-radius:3px;
+}
+
+/* ================= HUD-ПАНЕЛЬ КОМПЛЕКСА ================= */
+.app-window{
+  background:#0a141d;
+  border:1px solid rgba(47,227,196,.22);
+  border-radius:14px;
+  box-shadow:0 30px 80px rgba(0,0,0,.62),0 0 0 1px rgba(47,227,196,.05);
+  transform:perspective(1200px) rotateY(-3deg) rotateX(1deg);
+}
+.app-topbar{background:#0d1a23;border-bottom:1px solid rgba(47,227,196,.14)}
+.window-dots i{background:#1f4453}
+.window-dots i:first-child{background:var(--mint);box-shadow:0 0 10px rgba(47,227,196,.7)}
+.app-body{grid-template-columns:112px 1fr}
+.app-side{background:#08121a;border-right:1px solid rgba(47,227,196,.12)}
+.side-logo{background:linear-gradient(135deg,var(--mint),var(--blue));border-radius:8px}
+.side-item{background:#152733}
+.side-item.active{background:rgba(47,227,196,.1);box-shadow:inset 3px 0 0 var(--mint);border-radius:6px}
+.app-main{background:#0b1620}
+.fake-title{background:#2b4d5e}
+.fake-subtitle{background:#1a2f39}
+.status-pill{
+  color:var(--mint);
+  background:rgba(47,227,196,.1);
+  border:1px solid rgba(47,227,196,.34);
+  font-family:var(--mono);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.metric{background:#0e1c26;border:1px solid rgba(47,227,196,.14);border-radius:10px}
+.metric-icon{background:rgba(47,227,196,.12);border-radius:6px}
+.metric small{color:#7f9aab}
+.chart-card,.tasks-card{background:#0e1c26;border:1px solid rgba(47,227,196,.14);border-radius:10px}
+.chart-bars{border-bottom:1px solid rgba(47,227,196,.14)}
+.chart-bars i{background:linear-gradient(180deg,var(--mint),rgba(43,157,255,.55));opacity:1;border-radius:4px 4px 2px 2px}
+.task-row{border-bottom:1px solid rgba(47,227,196,.1)}
+.task-check{background:rgba(47,227,196,.14);box-shadow:inset 0 0 0 5px #0e1c26,0 0 0 1px var(--mint);border-radius:4px}
+.task-lines:before{background:#1e3542}
+.task-lines:after{background:#152733}
+.floating-card{
+  background:rgba(9,18,24,.92);
+  border:1px solid rgba(47,227,196,.32);
+  border-radius:10px;
+  box-shadow:0 18px 44px rgba(0,0,0,.55);
+}
+.floating-card b{color:var(--mint);font-family:var(--mono);font-size:19px;letter-spacing:-.01em}
+.floating-card small{color:var(--muted)}
+
+/* ================= О КОМПАНИИ ================= */
+.info-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  box-shadow:0 18px 46px rgba(0,0,0,.4);
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.info-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(47,227,196,.45);
+  box-shadow:0 24px 56px rgba(0,0,0,.5),0 0 0 1px rgba(47,227,196,.16);
+}
+.info-card:after{background:linear-gradient(135deg,rgba(47,227,196,.14),transparent 68%)}
+.info-card p{color:var(--muted)}
+.icon-box{
+  color:var(--mint);
+  background:rgba(47,227,196,.08);
+  border:1px solid rgba(47,227,196,.26);
+  border-radius:10px;
+}
+.flow-strip{
+  background:linear-gradient(135deg,#0b1a22,#0e2831);
+  border:1px solid rgba(47,227,196,.2);
+  border-radius:var(--radius-lg);
+}
+.flow-node{
+  color:#d3ece6;
+  background:rgba(47,227,196,.06);
+  border:1px solid rgba(47,227,196,.24);
+  border-radius:8px;
+  font-family:var(--mono);
+  font-size:13px;
+  font-weight:700;
+}
+.flow-arrow{color:var(--mint)}
+
+/* ================= ПРЕИМУЩЕСТВА ================= */
+.benefit-feature{
+  background:linear-gradient(160deg,#0d1c25,#0a161d);
+  border:1px solid rgba(47,227,196,.2);
+  border-radius:var(--radius-xl);
+}
+.benefit-feature h3{color:var(--ink)}
+.benefit-feature p{color:var(--muted)}
+.benefit-visual{
+  max-width:520px;
+  margin:26px auto 0;
+  padding:10px;
+  background:rgba(8,18,26,.55);
+  border:1px solid rgba(47,227,196,.2);
+  border-radius:12px;
+}
+.benefit-visual img{width:100%;height:auto;border-radius:8px}
+.benefits-grid{grid-auto-rows:minmax(177px,1fr)}
+.benefit-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  transition:transform .22s,border-color .22s,box-shadow .22s;
+}
+.benefit-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(47,227,196,.42);
+  box-shadow:0 22px 52px rgba(0,0,0,.45);
+}
+.benefit-card p{color:var(--muted)}
+.benefit-card.featured{
+  background:linear-gradient(150deg,rgba(47,227,196,.16),rgba(43,157,255,.1));
+  border:1px solid rgba(47,227,196,.5);
+}
+.benefit-card.featured p{color:#c8e6df}
+.benefit-mark{
+  color:var(--mint);
+  background:rgba(47,227,196,.1);
+  border:1px solid rgba(47,227,196,.28);
+  border-radius:8px;
+  font-family:var(--mono);
+  font-size:13px;
+  letter-spacing:-.01em;
+  padding:0 6px;
+}
+.featured .benefit-mark{color:#03130f;background:var(--mint)}
+
+/* ================= СПЕЦПРЕДЛОЖЕНИЕ ================= */
+.offer-wrap{
+  background:linear-gradient(140deg,#08131a 0%,#0c2530 58%,#0e3a40 100%);
+  border:1px solid rgba(47,227,196,.26);
+  border-radius:var(--radius-xl);
+  box-shadow:0 26px 70px rgba(0,0,0,.55);
+}
+.offer-wrap:after{
+  content:"АУДИТ";
+  color:rgba(47,227,196,.07);
+  font-family:var(--mono);
+  font-size:160px;
+  font-weight:800;
+  letter-spacing:-.04em;
+  top:-52px;
+  right:-14px;
+}
+.offer-wrap p{color:#9fbccb}
+.discount b{color:var(--mint);text-shadow:0 0 44px rgba(47,227,196,.4)}
+.offer-list{gap:10px}
+.offer-item{
+  color:#d6ece7;
+  background:rgba(47,227,196,.06);
+  border:1px solid rgba(47,227,196,.2);
+  border-radius:8px;
+  font-family:var(--mono);
+  font-size:12.5px;
+  font-weight:600;
+}
+.offer-item:before{color:#03130f;background:var(--mint);border-radius:3px}
+
+/* ================= ОБСУЖДЕНИЕ ПРОЕКТА ================= */
+.cta{background:#08121a}
+.cta-copy{
+  background:linear-gradient(150deg,#0a1a24,#0e3038);
+  border:1px solid rgba(47,227,196,.24);
+  border-radius:var(--radius-xl);
+}
+.cta-copy h2{color:var(--ink)}
+.cta-copy p{color:#9fbccb}
+.cta-contacts{color:#cfeae4}
+.cta-copy .cta-mail a{color:var(--mint)}
+.cta-visual{background:rgba(47,227,196,.05);border:1px solid rgba(47,227,196,.18);border-radius:12px}
+
+/* ================= ПОДВАЛ ================= */
+.footer{
+  color:#8fa9b8;
+  background:#04090d;
+  border-top:1px solid rgba(47,227,196,.14);
+}
+.funding-footer{border-bottom:1px solid rgba(47,227,196,.12)}
+.funding-logo{background:#eef6f9;border-radius:8px}
+.funding-text{color:#8fa9b8}
+.footer-brand{color:var(--ink)}
+.footer-brand img{box-shadow:0 0 0 1px rgba(47,227,196,.25)}
+
+/* ================= УВЕДОМЛЕНИЕ ================= */
+/* ================= УВЕДОМЛЕНИЕ ================= */
+.toast{
+  color:var(--ink);
+  background:#0d1c25;
+  border:1px solid rgba(47,227,196,.4);
+  border-radius:10px;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);
+}
+
+/* ================= ИЗОБРАЖЕНИЯ И ПАНЕЛИ ================= */
+.panel-caption{
+  color:var(--muted);
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.cell-view{width:100%;height:auto;border-radius:6px}
+.panel-title{color:var(--ink);font-size:15px;font-weight:800;letter-spacing:-.01em}
+.panel-subtitle{color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;margin-top:4px}
+.task-text{flex:1;color:#a9c2d1;font-family:var(--mono);font-size:10.5px}
+
+.scheme-figure{
+  margin:0 0 18px;
+  padding:10px;
+  background:#08121a;
+  border:1px solid rgba(47,227,196,.24);
+  border-radius:var(--radius-lg);
+  box-shadow:0 24px 60px rgba(0,0,0,.5);
+}
+.scheme-figure img{width:100%;height:auto;border-radius:8px}
+.scheme-specs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.spec{
+  display:grid;
+  gap:6px;
+  padding:16px 18px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-left:2px solid rgba(47,227,196,.55);
+  border-radius:10px;
+}
+.spec-key{color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.spec-val{color:var(--ink);font-size:15px;font-weight:700}
+
+@media (max-width:1050px){
+  .scheme-specs{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .scheme-figure{padding:6px}
+  .scheme-specs{grid-template-columns:1fr}
+}
+
+/* ================= АДАПТАЦИЯ КОНТЕНТА ================= */
+.hero-copy h1{font-size:clamp(34px,4.4vw,58px);max-width:640px}
+.brand img,.footer-brand img{object-fit:cover}
+.discount{flex-wrap:wrap;gap:10px}
+.discount b{font-size:72px}
+
+/* ================= АДАПТИВ ================= */
+@media (max-width:1050px){
+  .nav-links{
+    background:#0b1620;
+    border:1px solid rgba(47,227,196,.24);
+    box-shadow:0 26px 60px rgba(0,0,0,.6);
+    border-radius:12px;
+  }
+  .nav-links a{padding:6px 0;border-bottom:1px solid rgba(47,227,196,.12)}
+  .nav-links a:hover{border-bottom-color:transparent}
+}
+
+@media (max-width:760px){
+  .hero{padding:40px 0 62px}
+  .hero-copy h1{font-size:40px}
+  .support-logos{border-right:0}
+  .app-window{transform:none}
+  .app-body{grid-template-columns:84px 1fr}
+  .offer-wrap:after{font-size:120px;top:-34px}
+}
+
+@media (max-width:470px){
+  .hero-copy h1{font-size:33px}
+  .offer-wrap:after{font-size:88px;top:-22px;right:-8px}
+  .discount b{font-size:52px}
+}
+
+
+
+
+
